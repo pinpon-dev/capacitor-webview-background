@@ -34,8 +34,12 @@ public class BackgroundWebviewPlugin: CAPPlugin {
     
     @objc func updateBackgroundColor(_ call: CAPPluginCall) {
         let color = call.getString("color") ?? ""
-        let appDelegate = UIApplication.shared.delegate
-        appDelegate?.window?!.backgroundColor = self.colorWithHexString(hexString:color)
+        
+        DispatchQueue.main.async {
+            let appDelegate = UIApplication.shared.delegate
+            appDelegate?.window?!.backgroundColor = self.colorWithHexString(hexString:color)
+        }
+        
         call.resolve([
             "color": color
         ])

@@ -1,7 +1,7 @@
 {
   "name": "capacitor-webview-background",
-  "version": "0.0.1",
-  "description": ".",
+  "version": "1.0.0",
+  "description": "Simple plugin to update app color background (android/iOS) from JS",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pinpon-devdev.pin-pon.plugin.capactor-webview-background.git"
+    "url": "git+https://github.com/pinpon-dev/capactor-webview-background.git"
   },
   "bugs": {
     "url": "https://github.com/pinpon-devdev.pin-pon.plugin.capactor-webview-background/issues"

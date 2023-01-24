@@ -1,6 +1,5 @@
 # capacitor-webview-background
-
-.
+Simple plugin to update app color background (android/iOS) from JS
 
 ## Install
 
@@ -11,9 +10,27 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`updateBackgroundColor(...)`](#updatebackgroundcolor)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### updateBackgroundColor(...)
+
+```typescript
+updateBackgroundColor(options: { color: string; }) => Promise<{ color: string; }>
+```
+
+| Param         | Type                            |
+| ------------- | ------------------------------- |
+| **`options`** | <code>{ color: string; }</code> |
+
+**Returns:** <code>Promise&lt;{ color: string; }&gt;</code>
+
+--------------------
+
 </docgen-api>
